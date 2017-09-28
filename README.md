@@ -11,12 +11,21 @@ Read more: https://www.dennyzhang.com/chatqueryhost
 
 # How To Use
 ```
+# Get the code
 git clone https://github.com/DennyZhang/node_status_in_json.git
 cd node_status_in_json
 pip install -r requirements.txt
+```
 
-# Run the command with everything default
+```
+# Query node usage
 python ./node_usage.py
+
+# Query node usage and show service status
+python ./node_usage.py --check_service_command "service elasticsearch status"
+
+# Query node usage and tail one log file
+python ./node_usage.py --log_file "/var/log/elasticsearch/mycluster.log"
 ```
 
 # Console Output
