@@ -18,8 +18,8 @@ pip install -r requirements.txt
 ```
 
 ```
-# Query node usage
-python ./node_usage.py with everything default
+# Query node usage with everything default
+python ./node_usage.py
 
 # Query node usage and show service status
 python ./node_usage.py --check_service_command "service elasticsearch status"
